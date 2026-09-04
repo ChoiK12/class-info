@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지 · 강화고등학교 2학년 1반</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>관리자 페이지</h1>
+        <p>강화고등학교 · 2학년 1반</p>
+    </header>
+
+
+    <main class="admin-container">
+
+        <!-- ==============================
+             공지사항 등록
+             ============================== -->
+
+        <section class="admin-card">
+            <h2>📢 공지사항 등록</h2>
+
+            <label for="notice-title">제목</label>
+            <input
+                type="text"
+                id="notice-title"
+                placeholder="공지사항 제목을 입력하세요"
+            >
+
+            <label for="notice-content">내용</label>
+            <textarea
+                id="notice-content"
+                placeholder="공지사항 내용을 입력하세요"
+            ></textarea>
+
+            <button id="notice-save-button" class="save-button">
+                공지사항 저장
+            </button>
+
+            <p id="notice-message" class="admin-message"></p>
+        </section>
+
+
+        <!-- ==============================
+             등록된 공지사항
+             ============================== -->
+
+        <section class="admin-card">
+
+            <div class="admin-card-title">
+                <h2>📋 등록된 공지사항</h2>
+
+                <button
+                    id="refresh-notices"
+                    class="refresh-button"
+                >
+                    새로고침
+                </button>
+            </div>
+
+            <div id="notice-list" class="admin-list">
+                불러오는 중...
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             수행평가 등록
+             ============================== -->
+
+        <section class="admin-card">
+
+            <h2>📝 수행평가 등록</h2>
+
+            <label for="assessment-subject">과목</label>
+            <input
+                type="text"
+                id="assessment-subject"
+                placeholder="예: 국어"
+            >
+
+            <label for="assessment-title">제목</label>
+            <input
+                type="text"
+                id="assessment-title"
+                placeholder="예: 발표 수행평가"
+            >
+
+            <label for="assessment-date">날짜</label>
+            <input
+                type="date"
+                id="assessment-date"
+            >
+
+            <label for="assessment-content">내용</label>
+            <textarea
+                id="assessment-content"
+                placeholder="수행평가에 대한 상세 내용을 입력하세요"
+            ></textarea>
+
+            <button
+                id="assessment-save-button"
+                class="save-button"
+            >
+                수행평가 저장
+            </button>
+
+            <p
+                id="assessment-message"
+                class="admin-message"
+            ></p>
+
+        </section>
+
+
+        <!-- ==============================
+             등록된 수행평가
+             ============================== -->
+
+        <section class="admin-card">
+
+            <div class="admin-card-title">
+
+                <h2>📋 등록된 수행평가</h2>
+
+                <button
+                    id="refresh-assessments"
+                    class="refresh-button"
+                >
+                    새로고침
+                </button>
+
+            </div>
+
+            <div
+                id="assessment-list"
+                class="admin-list"
+            >
+                불러오는 중...
+            </div>
+
+        </section>
+
+
+        <!-- 학사일정 등록 -->
+        <section class="admin-card">
+    <h2>📅 학사일정 등록</h2>
+
+    <label for="calendar-date">날짜</label>
+    <input
+        type="date"
+        id="calendar-date"
+    >
+
+    <label for="calendar-title">일정</label>
+    <input
+        type="text"
+        id="calendar-title"
+        placeholder="예: 체육대회"
+    >
+
+    <button
+        id="calendar-save-button"
+        class="save-button"
+    >
+        학사일정 저장
+    </button>
+
+    <p
+        id="calendar-message"
+        class="admin-message"
+    ></p>
+        </section>
+
+
+        <!-- 등록된 학사일정 -->
+        <section class="admin-card">
+    <div class="admin-card-title">
+        <h2>📋 등록된 학사일정</h2>
+
+        <button
+            id="refresh-calendar"
+            class="refresh-button"
+        >
+            새로고침
+        </button>
+    </div>
+
+    <div
+        id="calendar-list"
+        class="admin-list"
+    >
+        불러오는 중...
+    </div>
+        </section>
+
+        <!-- 시험 D-DAY 설정 -->
+        <section class="admin-card">
+    <h2>📝 시험 D-DAY 설정</h2>
+
+    <label for="exam-name">시험 이름</label>
+    <input
+        type="text"
+        id="exam-name"
+        placeholder="예: 2학기 중간고사"
+    >
+
+    <label for="exam-date">시험 날짜</label>
+    <input
+        type="date"
+        id="exam-date"
+    >
+
+    <button
+        id="exam-save-button"
+        class="save-button"
+    >
+        시험 정보 저장
+    </button>
+
+    <p
+        id="exam-message"
+        class="admin-message"
+    ></p>
+        </section>
+
+
+        <!-- 현재 시험 정보 -->
+        <section class="admin-card">
+    <div class="admin-card-title">
+        <h2>📋 현재 시험</h2>
+
+        <button
+            id="refresh-exam"
+            class="refresh-button"
+        >
+            새로고침
+        </button>
+    </div>
+
+    <div
+        id="exam-info"
+        class="admin-list"
+    >
+        불러오는 중...
+    </div>
+        </section>
+
+    </main>
+
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
