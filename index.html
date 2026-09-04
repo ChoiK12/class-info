@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강화고등학교 · 2학년 1반</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>강화고등학교 2학년 1반</h1>
+    </header>
+
+
+    <main class="dashboard">
+
+        <!-- 공지사항 -->
+        <section class="card announcements">
+
+            <div class="card-title">
+                <h2>📢 공지사항</h2>
+                <button class="more-button">자세히 보기 ›</button>
+            </div>
+
+            <div class="list">
+            </div>
+        </section>
+
+
+        <!-- 수행평가 -->
+        <section class="card assessments">
+
+            <div class="card-title">
+                <h2>📝 수행평가</h2>
+                <button class="more-button">자세히 보기 ›</button>
+            </div>
+            <div class="list">
+                
+            </div>
+        </section>
+
+
+        <!-- 학사일정 -->
+        <section class="card calendar">
+
+            <div class="card-title">
+                <h2>📅 학사일정</h2>
+                <button class="more-button">자세히 보기 ›</button>
+            </div>
+
+            <div class="calendar-list">
+            </div>
+        </section>
+
+
+        <!-- 시간표 -->
+        <section class="card timetable">
+
+            <div class="card-title date-title">
+
+                <h2>🕐 시간표</h2>
+
+                <div class="date-selector">
+                    <button>‹</button>
+                    <span>9월 4일 (금)</span>
+                    <button>›</button>
+                </div>
+
+            </div>
+
+            <div class="timetable-list">
+
+                <div>
+                    <span>1교시</span>
+                    <b>국어</b>
+                </div>
+
+                <div>
+                    <span>2교시</span>
+                    <b>수학</b>
+                </div>
+
+                <div>
+                    <span>3교시</span>
+                    <b>영어</b>
+                </div>
+
+                <div>
+                    <span>4교시</span>
+                    <b>경제</b>
+                </div>
+
+                <div>
+                    <span>5교시</span>
+                    <b>한국사</b>
+                </div>
+
+                <div>
+                    <span>6교시</span>
+                    <b>도시의 미래 탐구</b>
+                </div>
+
+                <div>
+                    <span>7교시</span>
+                    <b>체육</b>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 급식 -->
+        <section class="card meals">
+
+            <div class="card-title date-title">
+
+                <h2>🍚 급식</h2>
+
+                <div class="date-selector">
+                    <button>‹</button>
+                    <span>9월 4일 (금)</span>
+                    <button>›</button>
+                </div>
+
+            </div>
+
+            <div class="meal-grid">
+
+                <div class="meal">
+                    <h3>🌅 조식</h3>
+                    <p>급식 불러오는 중...</p>
+                </div>
+
+                <div class="meal">
+                    <h3>☀️ 중식</h3>
+                    <p>급식 불러오는 중...</p>
+                </div>
+
+                <div class="meal">
+                    <h3>🌙 석식</h3>
+                    <p>급식 불러오는 중...</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 시험 D-Day -->
+        <section class="card exam">
+            <div class="dday">
+                불러오는 중...
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- 상세정보 팝업 -->
+    <div id="modal" class="modal hidden">
+
+        <div class="modal-box">
+
+            <button class="modal-close">×</button>
+
+            <h2 id="modal-title"></h2>
+
+            <div id="modal-content"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
